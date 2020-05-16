@@ -1,20 +1,14 @@
-#Elevar numero al cuadrado
-def cuadrado(x):
-    return x * x
+'''
+Una panaderia vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%.
+Escribe un programa que comience leyendo el numero de barras vendidas que no son del dia. 
+Despus tu porgrama debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total. 
+'''
 
-cuadrado_de_dos = cuadrado(2)
+precio = 3.49
+precioDescuento = 3.49*0.40
 
-print(cuadrado_de_dos)
+barrasdepan = input('¿Cuantas barras de pan hay vendidas? ')
 
-#Estructuras de control
-condicion = True
-if condicion == True:
-    print('IF')
-else:
-    print('ELSE')
-
-
-#Estructura del FOR
-
-for valor in (1,2,3,4):
-    print(valor)
+print ('Precio habitual: ' + str(precio))
+print ('Descuento: ' + str(round(precioDescuento,2)))
+print('El precio final es ' + str(round(precioDescuento * float(barrasdepan), 2)))

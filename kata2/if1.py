@@ -1,14 +1,13 @@
 '''
-Una panaderia vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%.
-Escribe un programa que comience leyendo el numero de barras vendidas que no son del dia. 
-Despus tu porgrama debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total. 
+Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e
+imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
 '''
 
-precio = 3.49
-precioDescuento = 3.49*0.40
+password = "contraseña"
 
-barrasdepan = input('¿Cuantas barras de pan hay vendidas? ')
+password_del_usuario = input("Introduzca la contraseña: ")
 
-print ('Precio habitual: ' + str(precio))
-print ('Descuento: ' + str(round(precioDescuento,2)))
-print('El precio final es ' + str(round(precioDescuento * float(barrasdepan), 2)))
+if password == password_del_usuario:
+    print("El password es correcto")
+else:
+    print("el password no es correcto")
