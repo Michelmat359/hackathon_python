@@ -1,17 +1,19 @@
 ''' 
 En bloque
 '''
+
+
 #Comentarios
-nombre = 'Miguel Angel Mateo'
+nombre = 'Miguel Angel'
 edad = 30
-esta_trabajando = True;
+estaTrabajando = True
 
 dato = input('Introducir Dato: ')
 print(dato)
 
 
 if(edad >= 18):
-    nombre2 = input('Tu nombre: ')
+    nombre2 = input('Tu apellido: ')
     print('Eres mayor de edad')
     print('Bienvenido ' + nombre + ' ' +nombre2)
 else:
